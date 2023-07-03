@@ -12,6 +12,7 @@
   --surface-color-hover: rgba(0, 0, 0, 0.05);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-stars.svg);
+  --projetos-bg-color: rgba(255, 255, 255, 0.1);
 }
 
 .light {
@@ -22,15 +23,10 @@
   --surface-color-hover: rgba(255, 255, 255, 0.05);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
+  --projetos-bg-color: rgba(0, 0, 0, 0.1);
 }
 
 body {
-  /*
-  background: url(./assets/bg-mobile.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  */
   background: var(--bg-url) no-repeat top center/cover;
 }
 
@@ -133,6 +129,23 @@ ul li a {
 ul li a:hover {
   background: var(--surface-color-hover);
   border: 1.5px solid var(--text-color);
+}
+
+#projetos {
+  /* border: 1px solid red; */
+  background-color: var(--projetos-bg-color);
+  padding: 12px 48px;
+}
+
+#projetos p {
+  text-align: center;
+  font-weight: 500;
+  margin: 8px;
+  text-decoration-line: underline;
+}
+
+#projetos li {
+  margin: 12px;
 }
 
 /* Social Links */
